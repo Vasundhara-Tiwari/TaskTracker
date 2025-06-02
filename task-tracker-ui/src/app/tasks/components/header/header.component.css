@@ -1,0 +1,16 @@
+.logo{
+    width: 5rem;
+    border-radius: 50%;
+}
+
+.heading{
+    font-size: 2rem;
+    font-weight: 700;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center; /* Vertically center the items */
+  gap: 10px;           /* Optional: adds spacing between image and text */
+}

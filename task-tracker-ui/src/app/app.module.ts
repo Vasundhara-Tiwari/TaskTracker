@@ -13,12 +13,16 @@ import { MatInputModule }  from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
 import { MatDatepickerModule} from '@angular/material/datepicker';
 import { MatNativeDateModule, provideNativeDateAdapter } from '@angular/material/core';
+import { SideBarComponent } from './tasks/components/side-bar/side-bar.component';
+import { HeaderComponent } from './tasks/components/header/header.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TaskListComponent,
-    TaskFormComponent
+    TaskFormComponent,
+    SideBarComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
