@@ -1,0 +1,12 @@
+<h2>Create Task</h2>
+<form (ngSubmit)="onSubmit()">
+  <input [(ngModel)]="task.title" name="title" placeholder="Title" required />
+  <input [(ngModel)]="task.description" name="description" placeholder="Description" />
+  <input [(ngModel)]="task.dueDate" name="dueDate" type="date" />
+  <select [(ngModel)]="task.status" name="status">
+    <option *ngFor="let s of [Status.TODO, Status.IN_PROGRESS, Status.DONE]" [value]="s">{{ s }}</option>
+  </select>
+  <button type="submit">Create</button>
+</form>
+
+
